@@ -1,0 +1,95 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    background-color: blue;
+ }
+ .head{
+    display: flex;
+ }
+ .head{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: -40px;
+
+ }
+ .text{
+    color: aliceblue;
+ }
+ .icon img{
+    width: 15px ;
+    height: 15px;
+
+
+ }
+
+.container{
+    display: grid; 
+    grid-template-areas: 
+    "Masonry-1 Responsive Overlap Overlap"
+    "Masonry-1 Fluid Explicity Negative"
+    "Flexible  Masonry-2 Explicity  Masonry-3"
+    "Dom  Masonry-2 Named Named";
+    
+ 	grid-row-gap: 20px;
+ 	grid-column-gap: 20px;
+ 	margin: 50px;
+ 	width: 100%;
+}
+.container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+  .box{
+	grid-area: Masonry-1;
+	height: 200px;
+}
+
+.box-1{
+	grid-area: Responsive;
+	height: 90px;
+}
+.box-2{
+	grid-area: Overlap;
+	height: 90px;
+}
+.box-3{
+	grid-area: Fluid;
+    height: 90px;
+    
+}
+.box-4 { 
+	grid-area: Explicity;
+    height: 200px;
+}
+.bod-5{
+    grid-area: Negative;
+	height: 90px;
+} 
+.box-6{
+	grid-area: Flexible;
+	height: 90px;
+}
+.box-7{
+	grid-area: Masonry-2 ;
+	height: 200px;
+}
+.box-8{
+	grid-area:Masonry-3 ;
+	
+	height: 90px;
+}
+.box-9 {
+	grid-area: Dom;
+	height: 90px;
+}
+.box-10{
+	grid-area: Named ;
+    height: 90px;
+}
